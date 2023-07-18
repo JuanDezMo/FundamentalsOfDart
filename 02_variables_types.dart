@@ -47,4 +47,33 @@ void main() {
   const double account = 1100000.99;
   print('\nInitialValue : $initialValue');
   print('Account : $account');
+
+  /**
+   * Example.
+   */
+  final String saintSeiya = 'Seiya';
+  final int power = 100;
+  final bool isDeath = false;
+  final List<String> abilities = [
+    'agility',
+    'super speed',
+    'energy projection'
+  ];
+  print('''\n
+  Information:
+  * Name (String) : $saintSeiya
+  * Power (int) : $power
+  * Is death? (bool) : $isDeath
+  * Abilities (List<String>) : $abilities
+ ''');
+
+  // Using dynamic
+  dynamic errorMessage = 'Mensaje de error';
+  errorMessage = true;
+  errorMessage = [2, 4, 6];
+  print('ErrorMessage: $errorMessage');
+
+  errorMessage = () => true;
+  errorMessage = {"name": "Juanito", "age": 30};
+  print('ErrorMessage: $errorMessage');
 }
